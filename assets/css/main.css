@@ -187,6 +187,7 @@ body {
 		width: 100% !important;
 	}
 
+
 }
 
 @media screen and (max-width: 480px) {
@@ -212,7 +213,10 @@ body {
 	.container {
 		width: 100% !important;
 	}
+	.form-wrap {
 
+		display: none;
+	}
 }
 
 /* Grid */
@@ -2860,6 +2864,16 @@ button:hover,
 @media screen and (max-width: 480px) {
 
 	/* Basic */
+	img.logo-img {
+
+
+		width: 49%;
+		height: 89%	;
+	}
+
+	.logo-img:hover {
+		opacity: 0.8;
+	}
 
 	body, input, textarea, select {
 		font-size: 12pt;
@@ -2989,7 +3003,7 @@ button:hover,
 .read-more-button {
 	border: none;
 	color: #fff;
-	background-color: #f35858;
+	background-color: #F96E84;
 
 }
 
@@ -3089,4 +3103,88 @@ td, th {
 	font-size: 1em;
 	line-height: 150%;
 	height: auto;
+}
+
+.logo-img {
+
+	/*position: absolute;*/
+	/*left: -160%;*/
+	/*top: 40px;*/
+	opacity: 0.6;
+	width: 89%;
+	height: 89%	;
+}
+
+.logo-img:hover {
+	opacity: 0.8;
+}
+
+.cheat-sheet-wrap {
+
+}
+
+#sidebar.git-practices-link-wrap  section{
+	border-top: none;
+	margin-top: 2em;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.empty-para {
+	margin-top: 45px;
+}
+section, article {
+	/*margin-bottom: 3em;*/
+}
+
+.form-wrap {
+	width: 100%;
+	margin-left: 25%;
+}
+
+.contact-us-msgbox {
+	height: 300px;
+}
+
+.disclaimer-link {
+	font-size: 0.7em;
+}
+
+.why-git-wrap {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.about-wrap {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.list-item {
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-ms-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	position: relative;
+	background: #E7F8FB;
+	border-bottom: 1px solid #a9a9a9;
+	padding: 20px;
+}
+
+.list-item:hover {
+	background: #FC7F93;
+	border-bottom: 1px solid #a9a9a9;
+	padding: 20px;
+	color: #fff;
+}
+
+.list-date {
+	position: absolute;
+	top: 10;
+	left: 80%
+}
+
+.nav-link {
+	border-color: rgba(255, 255, 255, 0);
 }

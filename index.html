@@ -8,11 +8,22 @@
 	<head>
 		<title>GitHow | Version control</title>
 		<meta charset="utf-8" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create',  'UA-75619139-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -22,32 +33,28 @@
 					<div id="header" class="container">
 
 						<!-- Logo -->
-							<p id="logo"><a href="index.html">GitHow</a></p>
+							<p id="logo"><a href="index.html"><img class="logo-img" src="images/githow_whole_logo_442_148.png" alt="githow logo"></a></p>
 
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
 									<li>
-										<a href="#">Dropdown</a>
+										<a href="">Features</a>
 										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
+											<li><a href="github-hottest-list.html">Hottest repositories</a></li>
+
+											<li><a href="git-best-practices.html">Best practices</a></li>
+											<li><a href="git-cheat-sheet.html">Cheat sheet</a></li>
+											<li><a href="history.html">History</a></li>
+
+
+											<li><a href="terms-of-use.html">Terms of Use</a></li>
+
 										</ul>
 									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li class="break"><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li class="nav-link"><a href="articles.html">Articles</a></li>
+									<li class="break"><a href="about-us.html">About</a></li>
+									<li><a href="contact-us.html">Contact Us</a></li>
 								</ul>
 							</nav>
 
@@ -62,7 +69,7 @@
 							</header>
 							<p>Tips and information about Git and GitHub.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">Get Information</a></li>
+								<li><a href="git-cheat-sheet.html" class="button">Get Information</a></li>
 							</ul>
 						</section>
 
@@ -87,10 +94,10 @@
 							</section>
 							<section class="6u 12u(narrower) feature">
 								<div class="image-wrapper">
-									<a href="#" class="image featured"><img class="right-img" src="images/github_logo_571_256.png" alt="" /></a>
+									<a href="github-drag-drop.html" class="image featured"><img class="right-img" src="images/github_logo_571_256.png" alt="" /></a>
 								</div>
 								<header>
-									<h2>Github's new Drag and Drop</h2>
+									<h2><a href="github-drag-drop.html">Github's new Drag and Drop</a></h2>
 								</header>
 								<p>It is now possible to upload files via a new drap and drop feature on GitHub. Simply open GitHub in your browser and drag in a file. This will appeal to those who do not like to go near the command line.</p>
 								<ul class="actions">
@@ -164,9 +171,10 @@
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<textarea name="message" placeholder="Message"></textarea>
+											<textarea name="message" placeholder="Message *"></textarea>
 										</div>
 									</div>
+									<p>* leaving a message is optional</p>
 									<div class="row 50%">
 										<div class="12u">
 											<ul class="actions">
@@ -182,7 +190,9 @@
 									<ul class="divided icons 6u 12u(mobile)">
 										<li class="icon fa-twitter"><a href="#"><span class="extra">twitter.com/</span>githow</a></li>
 										<li class="icon fa-github"><a href="#"><span class="extra">GitHub.com/</span>githow</a></li>
-										<!--<li class="icon fa-dribbble"><a href="#"><span class="extra">dribbble.com/</span>untitled</a></li>-->
+										<li class="disclaimer-link">Please note that this a temporary website which serves
+											as part of an assignment for the studies of the website’s author.
+											For more information, please check <a href="terms-of-use.html"><span class="extra">Terms of Use.</span></a></li>
 									<!--</ul>-->
 									<!--<ul class="divided icons 6u 12u(mobile)">-->
 										<!--<li class="icon fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>-->
@@ -195,7 +205,7 @@
 					</div>
 					<div id="copyright" class="container">
 						<ul class="menu">
-							<li>&copy; GitHow. All rights reserved.</li></li>
+							<li>&copy; GitHow. All rights reserved.</li>
 						</ul>
 					</div>
 				</div>

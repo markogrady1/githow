@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>GitHow | Why use GitHub 2.7</title>
+    <title>GitHow | Why use Git</title>
     <meta charset="utf-8" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,7 +25,7 @@
 
     </script>
 </head>
-<body class="no-sidebar">
+<body class="right-sidebar">
 <div id="page-wrapper">
 
     <!-- Header -->
@@ -33,7 +33,7 @@
         <div id="header" class="container">
 
             <!-- Logo -->
-            <p id="logo"><a href="index.html"><img class="logo-img" src="images/githow_whole_logo_442_148.png" alt="githow logo"></a></p>
+            <h1 id="logo"><a href="index.html"><img class="logo-img" src="images/githow_whole_logo_442_148.png" alt="githow logo"></a></h1>
 
             <!-- Nav -->
             <nav id="nav">
@@ -64,59 +64,68 @@
     <!-- Main -->
     <div class="wrapper">
         <div class="container" id="main">
+            <div class="row 150%">
+                <div class="8u 12u(narrower)">
 
-            <!-- Content -->
-            <!-- Content -->
-            <article id="content" class="why-git-wrap">
-                <header>
-                    <h2>Why use GitHub 2.7</h2>
-                    <p>Features of the latest version of GitHub.</p>
-                </header>
-                <a  class="image featured"><img src="images/gitlogo-main_571_256.png" alt="" /></a>
-                <h3>Git worktree</h3>
-                <p>Git 2.7 has been released with some great new features, for example the new git worktree command,
-                    which allows you to check out
-                    and simultaneously work on multiple repository branches in separate directories.
-                    For example, if you need to make a fix and do not want to break your working copy you can
-                    check out a new branch in a new directory.
+                    <!-- Content -->
+                    <article id="content">
+                        <header>
+                            <h2>GitHub's new drag and drop feature.</h2>
+                            <p>Its now much easier to upload files to your repository.</p>
+                        </header>
+                        <a  class="image featured"><img src="images/github_logo.png" alt="" /></a>
+                        <h3>Git worktree</h3>
+                        <p>
+                            It is now possible to upload files via a new drap and drop feature on GitHub.
+                            Simply open GitHub in your browser, select the 'Upload files' button and drag in a file. This will appeal to those who
+                            do not like to go near the command line.<br>
+                            Many developers stay away from Git because of its command line surroundings.
+                            This feature was added this Febuary and has been welcomed by all.
 
-                    This can be achieved with the following command:
-                    <br>
-                <div class="code-block">
-                    $ git worktree add -b somedir/BB-1234 ../somedir/BB-1234
-                </div>
-                </p>
-                <p>It is also possible to view the working tree as list alongside the working branches.
+                            <br><br>
+                            Initially files could only be uploaded via the command line version or the
+                            GitHub desktop application. Now it can be done like so. <br><br>
 
-                <div class="code-block">
-                    $ git worktree list<br>
-                    /Users/kannonboy/src/bb/bitbucket    37732bd [master]<br>
-                    /Users/kannonboy/src/bb/staging      d5924bc [staging]<br>
-                    /Users/kannonboy/src/bb/fix/BB-1234  37732bd [hotfix/BB-1234]
+                            <a  class="image featured"><img src="images/file-upload-demo.gif" alt="" /></a>
+
+                            Does this mean the end of the git push command. I think not. True hardcore users of Git
+                            will probably be reluctant to use this feature, and that is possible by simply ignoring its
+                            excistence and using the original technique.
+                            <br>
+                            Only time will tell if this type of file upload will prove to be successful in the long run.
+                            We will keep you posted.
+                        </p>
+
+                    </article>
+
                 </div>
-                </p>
-                <h3>Git rebase</h3>
-                <p>
-                    Since Git 1.8.4 it has been possible to run a git rebase command and use the --autostash flag. So in affect this
-                    stashes any changes you may have made to the working copy before the rebase occurs, then reapplies them after the rebase.
-                    Git 2.7 provides us with a --no-autostash, that can be used like so.
-                <div class="code-block">
-                    $ git rebase master --no-autostash
+                <div class="4u 12u(narrower)">
+
+                    <!-- Sidebar -->
+                    <section id="sidebar" class="git-practices-link-wrap">
+                        <section>
+                            <header>
+
+                            </header>
+                            <p class="empty-para"></p>
+                            <ul class="actions">
+
+                            </ul>
+                        </section>
+                        <section>
+                            <a href="#" class="image featured"><img src="images/gitlogo-main_571_256.png" alt="" /></a>
+
+                            <h3>Git best practices</h3>
+                            <p>Git is the best way to implement version control. So it should be done correctly.
+                                Here are some of Git's best practices,
+                                such as, testing before commiting and writing effective commit messages.</p>
+                            <ul class="actions">
+                                <li><a href="git-best-practices.html" class="button read-more-button">Read More</a></li>
+                            </ul>
+                        </section>
+                    </section>
                 </div>
-                </p>
-                <h3>.gitignore with smoother negation.</h3>
-                <p>
-                    This next feature is a personal favourite. As you may know the .gitignore file simply lets git know
-                    which files to ignore. However, there are some instances when you wish to ignore a whole directory
-                    except one file. With the .gitignore negation this is possible by simply adding an exclamation. like so:
-                <div class="code-block">
-                    *.json <br>
-                    !markogrady.json
-                </div>
-                This command simply tells git to ignore all JSON files except for the nicely named markogrady.json file.
-                This is very handy, because previous versions did not allow files to be ignored if they were part of an ignored directory.
-                </p>
-            </article>
+            </div>
 
         </div>
     </div>
@@ -192,4 +201,4 @@
 <script src="assets/js/main.js"></script>
 
 </body>
-</html>
+</html> 
